@@ -4,38 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Солодка булочка</title>
+    
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <header>
-<nav>
         <!-- logo --> 
-        <img src="./img/logo.svg" alt="логотип солодкої булочки">
-        <a href=""></a>
+         <a href="./index.html">
+        <img src="./img/logo.svg" alt="логотип солодкої булочки"></a>
         <!-- посилання-на-хедері -->
         <ul>
-            <li> <a href="">Наші традиції</a></li>
-            <li> <a href="">шеф-кухарі</a></li>
-            <li><a href="">Формати</a></li>
-            <li> <a href="">Контакти</a></li>
+            <li> <a class="link" href="#tradition-section">Трансформація пухких традицій</a></li>
+            <li> <a class="link" href="#chiefs-section">шеф-кухарі</a></li>
+            <li><a  class="link"href="#format-section">Формати</a></li>
+            <li> <a class="link" href="#contact-section">Контакти</a></li>
         </ul>
     </nav>
-    <!-- button --> 
-    <button type="button">Замовити дзвінок</button>
+    <!-- button -->
+    <button class="button" type="button">Замовити дзвінок</button>
     </header>
     <!-- main -->
     <main>
         <!-- section1 -->
           <section>
-            <h1>Солодка булочка</h1>
+            <h1 class="hero-title"><span class="accent">Солодка</span> булочка</h1>
           </section>
           <!-- section2 -->
-          <section>
-            <ul>
+          <section id="tradition section">
+            <ul class="advantages-list">
                 <li>Великий попит на ринку </li>
                 <li>Доступні за бюджетом формати</li>
                 <li>Досвідчена управлінська команда</li>
             </ul>
-            <h2>Трансформація пухких традицій</h2>
+            <h2 class="section-title">Трансформація пухких традицій</h2>
             <p> <span>shop bakery</span> — це пекарня, яка взяла все найкраще, і зберегла смак традиційної випічки та натуральність інгредієнтів.</p>
             <p>Ми працюємо як найвідоміші мережі— 
  <span>5 хвилин і замовлення готове.</span>
@@ -44,8 +45,8 @@
 <img src="./img/pekar.jpg" alt="усміхнений пекар з хлібом">
           </section>
           <!-- section3 -->
-          <section>
-            <h2><h2> Наші найкращі шеф-кухарі</h2></h2>
+          <section id="chiefs-section">
+            <h2 class="section-title"> Наші найкращі <span class="accent">шеф-кухарі</span></h2>
             <!-- Nastya-Vlad-->
             <ul>
                 <li><article>
@@ -65,8 +66,8 @@
             </ul>
           </section>
           <!-- section4 -->
-          <section>
-            <h2>Формати</h2>
+          <section id="format-section">
+            <h2 class="section-title">Формати</h2>
             <ul>
                 <li><article>
                 <h3 lang="en">Walrus</h3>
@@ -80,8 +81,9 @@
             </ul>
           </section> 
           <!-- section5 -->
-          <section>
-            <h2>Приєднуйся до мережі пекарень</h2> 
+          <section id="contact-section">
+            <h2 class="section-title">Приєднуйся до мережі пекарень</h2> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9680.030960998427!2d21.00530376660225!3d52.186219923819074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecb77aceae487%3A0xaa0dc6c60d1f5129!2sMiau%20Cafe!5e0!3m2!1sen!2spl!4v1713032537864!5m2!1sen!2spl" width="603" height="595" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </section>
     </main>
     <!-- footer -->
@@ -111,12 +113,12 @@
 <li><a href=""></a></li>
         </ul>
         <a href="" target="_blank">Політика конфіденційності</a> 
-        <p>© 2022 Дані захищені</p>
+        <p>&copy; 2022 Дані захищені</p> 
     </address> 
     </footer>
 </body>
 </html>
-
+ 
 
 
 
