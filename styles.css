@@ -1,58 +1,212 @@
+@font-face {
+  font-display: swap; 
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/poppins-v21-latin-300.woff2') format('woff2'); 
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v21-latin-regular.woff2') format('woff2'); 
+}
+@font-face {
+  font-display: swap; 
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/poppins-v21-latin-600.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap; 
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/poppins-v21-latin-900.woff2') format('woff2'); 
+}
+
 :root {
-    --color-primary-dark: #31261a;
-    --color-primary-light: #faf4ea;
-    --color-brand-light: #819b57;  
-    --color-brand-dark: #465929; 
+  --color-primary-dark: #31261a;
+  --color-primary-light: #faf4ea;
+  --color-brand-light: #819b57;
+  --color-brand-dark: #465929;
 }
 
-/* base */
-body{ 
-    color: --color-primary-dark:
+/* Base Styles */
+* {
+    box-sizing: border-box;
+}
+body {
+  color: var(--color-primary-dark);
+  font-family: "Poppins", sans-serif; /* Apply Poppins to all elements */
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
 }
 
-ul{
-    list-style-type: none;
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+.visually-hidden
+{position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;}
+
+.section {
+    padding: 48px 0;
+}
+.container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;
 }
 
 /* button */
-.button{
-    color: var(--color-primary-light);
-    background-color: var(--color-brand-light);
-    border: 2px solid var(--color-brand-light);
-    border-radius: 8px;
-    cursor: pointer;
+.button {
+    padding: 16px 32px;
+  color: var(--color-primary-light);
+  background-color: var(--color-brand-light);
+  border: 2px solid var(--color-brand-light);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
 }
 
-.button:hover{
-    color: var(--color-brand-dark);
-background-color: transparent;
+.button:hover {
+  color: var(--color-brand-dark);
+  background-color: transparent;
 }
 
 /* link */
-.link{
-    color: var(--color-primary-light);
+.link {
+  color: var(--color-primary-light);
+  
 }
 
-.link:hover{
-    color: var(--color-brand-light);
+.link:hover {
+  color: var(--color-brand-light);
+  font-weight: 600;
 }
 
-/* hero-title */
-.hero-title{
-    color: var(--color-primary-light);
+/* hero-section */
+.hero-section {
+    padding: 272px 0;
 }
 
-.hero-title .accent{
-    color: var(--color-brand-light); 
+.hero-title {
+  color: var(--color-primary-light);
+ text-align: center;
+ font-size: 128px;
+ font-weight: 900;
+ margin-bottom: 0%;
+}
+
+.hero-title .accent {
+  color: var(--color-brand-light);
 }
 
 /* advantages-list */
-.advantages-list{
-    color:  var(--color-primary-light);
-background-color: var(---color-brand-light);
+.advantages-list {
+  color: var(--color-primary-light);
+  background-color: var(--color-brand-light); /* Corrected typo */
+}
+
+.advanteges-item{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.section-title {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1.3;
 }
 
 /* section-title */
-.section-title .accent{
-    color: var(--color-brand-dark);
+.section-title .accent {
+  color: var(--color-brand-dark);
 }
+
+/* traditions-section */
+.tradition-section {
+    padding-top: 96px;
+}
+
+.traditions-title {
+    margin-bottom: 42px;
+}
+
+.text-traditions .brand {
+    color: var(--color-brand-light);
+}
+
+
+/* traditions-uppecase-brand */
+.text-traditions .brand-uppercase {
+    text-transform: uppercase;
+    color: var(--color-brand-light);
+      font-weight: 600; 
+}
+
+/* chiefs-title */
+.chiefs-title{
+    margin-bottom: 80px;
+}
+
+.chief-title {
+       margin-bottom: 16px;
+     font-weight: 600;
+    font-size: 40px;
+}
+
+/* Format-title */
+.format-title{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.formats-title {
+    margin-bottom: 80px;
+}
+
+/* format-text */
+.format-text{
+    font-size: 14px;
+    font-weight: 300;
+}
+/* contacts */
+.contact-title {
+    margin-bottom: 16px;
+}
+
+/* footer */
+.adress-link {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--color-primary-light)
+}
+
+.adress-link:hover{
+    color: var(--color-brand-light)
+}
+
+.adress-copyright {
+    font-size: 14px;
+}
+
+
+
